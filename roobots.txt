@@ -1,0 +1,22 @@
+***** ESCOLHA QUAIS GOOGLEBOTS VAO SEGIR ESSAS REGRAS.....
+Google: User-agent: Googlebot
+Google Imagens: User-agent: Googlebot-images
+Google Adwords: User-agent: Adsbot-Google
+Google Adsense: User-agent: Mediapartners-Google
+Yahoo: User-agent: Slurp
+Bing: User-agent: Bingbot
+Todos os mecanismos: User-agent: * (ou simplesmente não incluir o comando user-agent)
+
+***** EXEMPLOS
+***** Desabilitamos a pasta system pois ela é o core do framework codeigniter!
+Disallow: /system
+
+***** Desabilitamos a pasta assets para que as imagens da galeria de fotos e
+***** videos não seja indexados pelo googlebot-images
+Disallow: /assets
+
+***** Permitimos acesso a pasta de controllers para indexar paginas
+Allow: /application/controllers
+
+***** Negamos a indexação de paginas de administração
+Disallow: /application/controllers/admin
